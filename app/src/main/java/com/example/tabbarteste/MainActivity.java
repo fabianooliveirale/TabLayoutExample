@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        setTabBar(ITEM_MAIN);
+        setTabLayout(ITEM_MAIN);
 
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                setTabBar(tab.getPosition());
+                setTabLayout(tab.getPosition());
             }
 
             @Override
@@ -79,12 +79,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-                setTabBar(tab.getPosition());
+                setTabLayout(tab.getPosition());
             }
         });
     }
 
-    public void setTabBar(Integer tabId){
+    public void setTabLayout(Integer tabId){
         switch (tabId){
             case 0:
                 button.setCompoundDrawablesWithIntrinsicBounds(0,IMG_ITEM_MAIN,0,0);
@@ -126,6 +126,6 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)
     public void onViewClicked() {
-          setTabBar(ITEM_MAIN);
+        setTabLayout(ITEM_MAIN);
     }
 }
