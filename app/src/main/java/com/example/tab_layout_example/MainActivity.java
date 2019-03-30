@@ -1,4 +1,4 @@
-package com.example.tabbarteste;
+package com.example.tab_layout_example;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,11 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
-import com.example.tabbarteste.fragments.FragmentTres;
-import com.example.tabbarteste.fragments.FragmentUm;
-import com.example.tabbarteste.fragments.FragmentoDois;
-import com.example.tabbarteste.fragments.Main;
-import com.example.tabbarteste.fragments.Quatro;
+import com.example.tabbarteste.R;
+import com.example.tab_layout_example.fragments.FragmentTres;
+import com.example.tab_layout_example.fragments.FragmentUm;
+import com.example.tab_layout_example.fragments.FragmentoDois;
+import com.example.tab_layout_example.fragments.Main;
+import com.example.tab_layout_example.fragments.Quatro;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

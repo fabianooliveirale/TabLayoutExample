@@ -1,7 +1,5 @@
-package com.example.tabbarteste.fragments;
+package com.example.tab_layout_example.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,21 +8,13 @@ import android.view.ViewGroup;
 
 import com.example.tabbarteste.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Main.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Main#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Main extends Fragment {
+public class FragmentTres extends Fragment {
 
-    public Main() {
+    public FragmentTres() {
     }
 
-    public static Main newInstance() {
-        Main fragment = new Main();
+    public static FragmentTres newInstance() {
+        FragmentTres fragment = new FragmentTres();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -41,9 +31,6 @@ public class Main extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.fragment_fragment_tres, container, false);
     }
-
-    // TODO: Rename method, update argument and hook method into UI event
-
 }

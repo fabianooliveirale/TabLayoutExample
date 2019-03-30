@@ -1,7 +1,5 @@
-package com.example.tabbarteste.fragments;
+package com.example.tab_layout_example.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,16 +8,16 @@ import android.view.ViewGroup;
 
 import com.example.tabbarteste.R;
 
+public class FragmentUm extends Fragment {
 
-public class Quatro extends Fragment {
+    public FragmentUm() {
 
-    public Quatro() {
-        // Required empty public constructor
     }
 
-    public static Quatro newInstance() {
-        Quatro fragment = new Quatro();
+    public static FragmentUm newInstance() {
+        FragmentUm fragment = new FragmentUm();
         Bundle args = new Bundle();
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -28,14 +26,14 @@ public class Quatro extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quatro, container, false);
+        return inflater.inflate(R.layout.fragment_fragment_um, container, false);
     }
 
 }
